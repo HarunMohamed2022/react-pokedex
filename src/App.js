@@ -44,7 +44,7 @@ const handleSubmit = (e) => {
       </form>
       {pokemonData.map((data) => {
         return(
-          <div className="container">
+          <div className="container" key={data.id}>
             <img src={data.sprites["front_default"]}></img>
             <div className="divTable">
             <div className="divTableBody">
